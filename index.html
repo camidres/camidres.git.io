@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="form-inicio">
+
+       
+
+        <div class="info">
+<!-- crear cuenta -->
+        <form action="" class="crear-cuenta" id="crear-cuenta">
+            <header>
+                <h2>Crear cuenta</h2>
+            </header>
+            
+
+            <div class="entrada">
+                    <i class="fas fa-user"></i>
+                <input type="text" placeholder="Nombre" class="dato">
+
+            </div>
+
+            <div class="entrada">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Correo" class="dato">
+
+            </div>
+
+            <div class="entrada">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Contrasena" class="dato">
+
+            </div>
+
+            <input type="submit" value="Crear Cuenta" name="crear" class="btn-inicio">
+
+            <a href="#" onclick="cambiar(this)">Iniciar sesion</a>
+        </form>
+
+        <!-- iniciar sesion -->
+        <form action="" class="iniciar-sesion" id="iniciar-sesion">
+
+            <header>
+                <h2>Iniciar sesion</h2>
+            </header>
+
+
+            <div class="entrada">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Correo" class="dato">
+
+            </div>
+
+            <div class="entrada">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Contrasena" class="dato">
+
+            </div>
+
+            <input type="submit" value="Iniciar Sesion" name="iniciar" class="btn-inicio">
+
+            <a href="#" onclick="cambiar(this)">Crear cuenta</a>
+        </form>
+
+    </div>
+    </div>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

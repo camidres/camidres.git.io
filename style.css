@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
+body{
+
+    background-color: #f0eeee;
+    background-size: cover;
+}
+
+.form-inicio{
+
+    max-width: 500px;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-inicio .info{
+
+    background: white;
+    color: black;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 330px;
+}
+
+.form-inicio .info header h2{
+
+    padding: 20px;
+    background-color: steelblue;
+    color: white;
+}
+
+.form-inicio .info .entrada{
+
+    max-width: 400px;
+    margin: 15px auto;
+    border-bottom: 1px solid black;
+    
+    background: white;
+    
+}
+
+.form-inicio .info .entrada .dato{
+      width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: white;
+}
+
+.btn-inicio{
+
+    display: inline-block;
+    text-decoration: none;
+    color: steelblue;
+    border-radius: 20px;
+    border: 1px solid steelblue;
+    margin: 15px 0;
+    padding: 10px 15px;
+}
+
+a{
+
+display: block;
+text-decoration: none;
+color: steelblue;
+
+
+}
+
+form{
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.crear-cuenta{
+
+    opacity: 1;
+    z-index: 10;
+}
+
+.iniciar-sesion{
+    opacity: 0;
+}
+
+.mostrar{
+    animation: .3s mostrar forwards;
+}
+.salir{
+    animation: .3s salir forwards;
+}
+
+@keyframes mostrar{
+
+    0%{
+        opacity: 0;
+        left: -100%;
+    }
+
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes salir{
+
+    0%{
+        opacity: 1;
+        left: 0;
+    }
+
+    100%{
+        opacity: 0;
+        left: 100%;
+    }
+}
